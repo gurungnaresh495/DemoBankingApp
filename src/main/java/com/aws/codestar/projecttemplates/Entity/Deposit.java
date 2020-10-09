@@ -14,7 +14,7 @@ public class Deposit {
     private int accountNo;
 
     @Id
-    @Column(name = "depositNo", nullable = false)
+    @Column(name = "depositno", nullable = false)
     public int getDepositNo() {
         return depositNo;
     }
@@ -23,7 +23,7 @@ public class Deposit {
         this.depositNo = depositNo;
     }
 
-    @Column(name = "depositAmount", nullable = false)
+    @Column(name = "depositamount", nullable = false)
     public float getDepositAmount() {
         return depositAmount;
     }
@@ -32,7 +32,7 @@ public class Deposit {
         this.depositAmount = depositAmount;
     }
 
-    @Column(name = "accountNo", nullable = false)
+    @Column(name = "accountno", nullable = false)
     public int getAccountNo() {
         return accountNo;
     }

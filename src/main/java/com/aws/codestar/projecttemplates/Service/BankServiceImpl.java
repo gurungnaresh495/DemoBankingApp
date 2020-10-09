@@ -52,4 +52,24 @@ public class BankServiceImpl implements BankService{
     public List<Account> getUserAccounts(int userId) {
         return (List<Account>) accountRepo.getUserAccounts(userId);
     }
+
+    @Override
+    public List<Deposit> getAccountDeposits(int accountNo) {
+        return (List<Deposit>) depositRepo.getAccountDeposits(accountNo);
+    }
+
+    @Override
+    public List<Deposit> getUserDeposits(int userId) {
+        return (List<Deposit>) depositRepo.getUserDeposits(userId);
+    }
+
+    @Override
+    public float getCurrentBalance(int accountNo) {
+        return (float) depositRepo.getAccountBalance(accountNo);
+    }
+
+    @Override
+    public void setBalance(int accountNo, float newBalance) {
+        depositRepo.setBalance(accountNo, newBalance);
+    }
 }
