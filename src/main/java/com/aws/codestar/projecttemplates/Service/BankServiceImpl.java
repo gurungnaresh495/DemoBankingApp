@@ -47,4 +47,9 @@ public class BankServiceImpl implements BankService{
     public List<User> findAll() {
         return userRepo.findAll();
     }
+
+    @Override
+    public List<Account> getUserAccounts(int userId) {
+        return (List<Account>) accountRepo.getUserAccounts(userId);
+    }
 }
