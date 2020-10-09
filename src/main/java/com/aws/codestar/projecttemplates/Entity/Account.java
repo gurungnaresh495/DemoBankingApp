@@ -16,7 +16,7 @@ public class Account implements Serializable
     private int userId;
 
     @Id
-    @Column(name = "accountNo", nullable = false)
+    @Column(name = "accountno", nullable = false)
     public int getAccountNo() {
         return accountNo;
     }
@@ -25,7 +25,7 @@ public class Account implements Serializable
         this.accountNo = accountNo;
     }
 
-    @Column(name = "accountType", nullable = false)
+    @Column(name = "accounttype", nullable = false)
     public String getAccountType() {
         return accountType;
     }
@@ -34,7 +34,7 @@ public class Account implements Serializable
         this.accountType = accountType;
     }
 
-    @Column(name = "currentBalance", nullable = false)
+    @Column(name = "currentbalance", nullable = false)
     public float getCurrentBalance() {
         return currentBalance;
     }
@@ -43,7 +43,7 @@ public class Account implements Serializable
         this.currentBalance = currentBalance;
     }
 
-    @Column(name = "userId", nullable = false)
+    @Column(name = "userid", nullable = false)
     public int getUserId() {
         return userId;
     }

@@ -13,4 +13,6 @@ public interface BankService {
     public void addReceipt(Receipt receipt);
 
     public List<User> findAll();
+
+    public List<Account> getUserAccounts(int userId);
 }
